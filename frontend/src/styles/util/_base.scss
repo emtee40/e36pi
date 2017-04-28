@@ -1,0 +1,77 @@
+body{
+	font-family: RobotoDraft, Roboto, sans-serif;
+	background-color: #600602;
+	color: #fd2003;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+div.header{
+
+	span{
+		padding: 5px;
+	}
+
+	span:last-child{
+		position: absolute;
+		right: 0px;
+	}
+
+	span:first-child{
+		position: absolute;
+		left: 0px;
+	}
+
+	span:nth-child(2){
+		position: absolute;
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+	}
+
+	position: absolute;
+	height: 30px;
+	width: 100%;
+	border-bottom: 1px solid #fd2003;
+}
+
+div.top{
+	position: absolute;
+	top: 40px;
+	left: 5px;
+	right: 5px;
+	width: 468px;
+	div.entry{
+		padding: 10px;
+		label{
+			display: block;
+			font-size: 10px;
+		}
+		span{
+			display: block;
+			font-size: 16px;
+		}
+		float: left;
+	}
+
+	div.hour{
+		padding: 10px;
+		float: right;
+		text-align: right;
+		font-size: 28px;
+	}
+}
+
+div.background{
+	position: absolute;
+	top: 95px;
+	img.car{
+		width: calc(100% - 20px);
+		margin: 10px;
+		path {
+		    fill: #000;
+		}
+	}
+}

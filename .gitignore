@@ -1,0 +1,10 @@
+**/tmp/*.*
+**/bower_components
+**/node_modules
+**/build/*
+**/release/*
+**/public/*
+
+*.log
+*.orig
+.DS_Store
