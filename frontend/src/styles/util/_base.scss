@@ -8,6 +8,10 @@ body{
 	overflow: hidden;
 }
 
+.clear{
+	clear: both;
+}
+
 div.header{
 
 	span{
@@ -43,6 +47,7 @@ div.top{
 	left: 5px;
 	right: 5px;
 	width: 468px;
+
 	div.entry{
 		padding: 10px;
 		label{
@@ -53,7 +58,23 @@ div.top{
 			display: block;
 			font-size: 16px;
 		}
-		float: left;
+		float: right;
+
+		&.left{
+			float: left;
+			img{
+				vertical-align: middle;
+			}
+
+			span{
+				padding-left: 5px;
+				display: inline-block;
+			}
+
+			&.deactivated{
+				opacity: .75;
+			}
+		}
 	}
 
 	div.hour{
@@ -61,6 +82,61 @@ div.top{
 		float: right;
 		text-align: right;
 		font-size: 28px;
+	}
+}
+
+div.bottom{
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+	right: 5px;
+	width: 468px;
+
+	div.entry{
+		float: left;
+		padding: 10px 18px;
+		width: 120px;
+		div.icon{
+			float: left;
+			padding-right: 5px;
+
+			&.oil{
+				padding-top: 8px;
+				padding-left: 5px;
+			}
+
+			&.water{
+				padding-left: 12px;
+			}
+
+			&.fuel{
+				padding-top: 3px;
+				padding-left: 16px;
+			}
+		}
+		div.data{
+			float: right;
+			padding-bottom: 3px;
+			label{
+				display: block;
+				font-size: 11px;
+			}
+			span{
+				display: block;
+				font-size: 18px;
+			}
+		}
+		div.progress{
+			border: 1px solid #fd2003;
+			//position: absolute;
+			height: 5px;
+			width: 100%;
+
+			div.bar{
+				height: 5px;
+				background: #fd2003;
+			}
+		}
 	}
 }
 
