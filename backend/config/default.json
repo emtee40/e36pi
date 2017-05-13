@@ -1,0 +1,11 @@
+{
+	"log": {
+		"level": "silly",
+		"colorize": true,
+		"timestamp": true
+	},
+	"http": {
+		"port": 3000
+	},
+	"secret": "e36pi"
+}
